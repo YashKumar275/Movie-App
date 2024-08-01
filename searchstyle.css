@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.movie{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;  /*10px is blur radius*/
+    width: 80%;
+    border-radius: 5px;
+}
+
+.movie.noBackground{
+    background: none;
+    box-shadow: none;
+    align-items: center;
+}
+
+.movie-poster img {
+    height: 450px;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+.movie-info {
+    padding-inline: 15px;
+}
+
+.movie-info h2 {
+    font-size: 32px;
+    margin: 20px 0 12px 0;  /*top bottom left right*/
+}
+
+/*p tag is sibling of h2 tag so only rating changes
+.movie-info h2+p{
+    text-align: center;
+}*/
+
+.movie-info .movie-genre{
+    display: flex;   /*they will come in 1 row*/
+    margin-block: 5px;  /*block for top & bottom*/
+    overflow-x: auto;  /*so that it fit with small screen automatically*/
+}
+
+.movie-info .movie-genre p{
+    background: #232f3e;
+    color: #fff;
+    padding: 5px 14px;
+    margin-inline: 5px;   /*left & right*/
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.movie-info p{
+    font-size: 18px;
+    margin-block: 16px;
+    line-height: 24px;  /*for space*/
+}

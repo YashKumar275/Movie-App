@@ -1,0 +1,33 @@
+#latest-movies-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#latest-movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#latest-movies .movie-card {
+    width: 200px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+#latest-movies .movie-card:hover {
+    transform: scale(1.05);
+}
+
+#latest-movies .movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+#latest-movies .movie-card p {
+    padding: 10px;
+    font-size: 16px;
+}
